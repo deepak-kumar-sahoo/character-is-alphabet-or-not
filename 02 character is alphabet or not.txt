@@ -1,0 +1,33 @@
+//Java program to check whether the character entered by the user is an alphabet or not.
+import java.util.Scanner;
+
+//class declaration
+public class AlphabetOrNot1
+{						
+    
+    //main method declaration
+    public static void main(String[] args)
+    {										
+        char ch;
+        Scanner sc = new Scanner(System.in);
+    
+        //Input character
+	    System.out.print("Enter a Character : ");                       
+        ch = sc.next().charAt(0);
+		
+	//condition for checking characters
+        if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+	      System.out.println("The inserted character " + ch + " is an Alphabet");
+	else
+	      System.out.println("The inserted character " + ch + " is not an Alphabet");
+		
+	//closing scanner class(not compulsory, but good practice)
+	sc.close();			                               
+	
+    } //end of the main method
+    
+} //end of the class
+
+
+Insert any character: 9
+The entered character 9 is not an Alphabet
